@@ -47,8 +47,8 @@ export const BentoGridItem = ({
   spareImg: string;
   titleClassName: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["SAP Fiori", "Node JS", "NextJs"];
+  const rightLists = ["C++", "React Js", "React Native"];
 
   const [copied, setCopied] = useState(false);
 
@@ -62,7 +62,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "https://www.linkedin.com/in/udit-utsav-95660a18b/";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -92,7 +92,7 @@ export const BentoGridItem = ({
 
         <div
           className={`absolute right-0 -bottom-5 ${
-            id === 5 && "w-full opacity-80"
+            id === 5 && "w-full opacity-50"
           } `}
         >
           {spareImg && (
@@ -130,9 +130,9 @@ export const BentoGridItem = ({
           {/* tech stack  */}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1  lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-2 md:gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
@@ -175,7 +175,7 @@ export const BentoGridItem = ({
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "Link Copied!" : "Copy my Linkdin Link"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}

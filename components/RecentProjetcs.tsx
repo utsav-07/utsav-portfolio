@@ -18,7 +18,7 @@ const RecentProjetcs = () => {
             key={item.id}
           >
             <PinContainer
-              title={item.link}
+              title={item.title}
               href={item.link}
             >
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
